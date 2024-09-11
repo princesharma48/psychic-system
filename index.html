@@ -25,7 +25,83 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <style>
-  /* General Styles */
+  .footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Top and bottom padding */
+}
+
+.footer-top {
+    border-bottom: 1px solid #444; /* Divider between top and bottom sections */
+    padding-bottom: 20px;
+}
+
+.footer-brand-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-brand-wrapper .logo img {
+    max-height: 50px; /* Adjust the logo size */
+}
+
+.footer-list,
+.quicklink-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li,
+.quicklink-list li {
+    margin: 5px 0;
+}
+
+.footer-link,
+.quicklink-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link:hover,
+.quicklink-link:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    border-left: 1px solid #444; /* Vertical divider line */
+    height: 50px;
+    margin: 0 20px;
+}
+
+.social-list {
+    display: flex;
+    gap: 10px;
+}
+
+.social-link ion-icon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom .copyright {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-bottom .footer-bottom-img {
+    max-height: 30px; /* Adjust the bottom image size */
+}
+/* General Styles */
 .header {
   background-color: #333; /* Dark background color for the header */
   color: #fff; /* White text color */
