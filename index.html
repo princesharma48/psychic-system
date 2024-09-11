@@ -24,7 +24,159 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+<style>
+  /* General Styles */
+.header {
+  background-color: #333; /* Dark background color for the header */
+  color: #fff; /* White text color */
+  padding: 15px 0; /* Padding around the header */
+  position: relative; /* Position relative to manage absolute elements */
+  z-index: 1000; /* Ensure the header is above other content */
+}
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+  padding: 0 15px; /* Padding on left and right */
+}
+
+.logo img {
+  max-height: 50px; /* Adjust the logo size */
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.search-btn,
+.btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px; /* Space between buttons */
+}
+
+.lang-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.lang-wrapper label {
+  margin-right: 5px;
+}
+
+#language {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-open-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hidden by default, show with media queries */
+}
+
+.navbar {
+  display: none; /* Hidden by default, show with media queries */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #444; /* Navbar background color */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-list,
+.navbar-social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-list li,
+.navbar-social-list li {
+  margin: 10px 0;
+}
+
+.navbar-link,
+.navbar-social-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-social-link {
+  font-size: 24px;
+}
+
+.navbar-link:hover,
+.navbar-social-link:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .menu-open-btn {
+    display: block;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .header-actions {
+    display: none; /* Hide actions on small screens */
+  }
+
+  .logo img {
+    max-height: 40px; /* Adjust logo size for smaller screens */
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+</style>
 <body id="top">
 
   <!-- 
